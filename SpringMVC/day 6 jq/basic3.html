@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" http-equiv="refresh" content="10">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $('img').click(function(){      $(this).hide();      });
+
+            $('p').click(function(){       $(this).hide();      });
+                                   });
+    </script> 
+    <script>
+         $(document).ready(function(){
+            $('h1').click(function(){      
+            $(".c1").css('color',"Blue");
+            $(".c1").css('font-style',"bold");   });
+            
+        
+         
+            $(':button').click(function(){    alert("both input and other button");    });
+            $(':submit').click(function(){    alert("submit button");    });
+        });
+
+    </script>
+</head>
+<body>
+    <p class="c1">
+        i am baby yoda - class c1
+    </p>
+  <img src="gg.jpeg" height="200px" width="250px" alt="not viewed">
+   <form >
+       <fieldset>
+           <legend>personal info</legend>
+           <label>text</label>
+           <input type="text"><br>
+           <br>
+           
+           <button>button</button>
+           
+           <input type="submit"><br>
+
+       </fieldset>
+   </form>
+</body>
+</html>

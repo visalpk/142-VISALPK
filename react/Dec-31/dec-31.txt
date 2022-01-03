@@ -1,0 +1,10 @@
+//Rest Operator
+//Spread Operator
+
+//for-of loop
+//for-in loop
+
+//scpoe of var(function scope), (let const---->block scope)
+npm install -g npx
+npm install -g create-react-app
+npx create-react-app student

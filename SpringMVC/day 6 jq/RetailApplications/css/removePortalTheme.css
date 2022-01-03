@@ -1,0 +1,44 @@
+wpthemeComplementaryContent , Header.wpthemeControlHeader, .component-control div.wpthemeInner { display:none; }
+
+.wpthemeAltText {
+    display: none;
+}
+
+.row .full {
+  width: 100%;
+}
+
+
+#footer {
+ display: none;
+  height: 85px;
+  min-width: 980px;
+  width: 100%;
+  position: relative;
+}
+div.lt-top-footer {
+ display: none;
+  height: 72px;
+  border-top: 1px solid #a9aaac;
+}
+div.lt-detail-footer {
+ display: none;
+  height: 32px;
+  border-top: 1px solid #a9aaac;
+  background: #ffffff;
+}
+
+/*Small footer*/
+.cm-small-footer {
+ display: none;
+  width: 980px;
+  margin: 20px auto;
+}
+.cm-copyright {
+ display: none;
+  float: left;
+}
+.cm-best-view {
+ display: none;
+  float: right;
+}

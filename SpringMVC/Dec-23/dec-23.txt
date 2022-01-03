@@ -1,0 +1,10 @@
+	@PostMapping("/login/{username}/{password}")
+  	public ResponseEntity<String> login(@PathVariable("username") String username,
+  			@PathVariable("password") String password){
+	
+       CustEntity cust= custservice.findAllCustomersByCustomername(username);
+    	
+    	return ResponseEntity.ok(cust);
+  		//return ResponseEntity.ok();
+			
+  	}

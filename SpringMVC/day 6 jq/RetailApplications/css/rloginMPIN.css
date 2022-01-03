@@ -1,0 +1,290 @@
+.clear5 {
+    clear: both;
+    height: 5px;
+}
+
+.clear10 {
+    clear: both;
+    height: 10px;
+}
+
+.clear15 {
+    clear: both;
+    height: 15px;
+}
+
+.clear20 {
+    clear: both;
+    height: 20px;
+}
+
+.P_Text {
+    color: #4a4a4a;
+    font-size: 14px;
+    margin: 0px;
+}
+
+    .P_Text lead {
+        font-size: 16px;
+    }
+
+.TextColorGray {
+    color: #9b9b9b;
+	margin:0px 10% 0px 10%;
+}
+
+
+.inputTextMPIN {
+    font-size: 14px;
+    width: 80%;
+    height: 30px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    box-shadow: none;
+    border-radius: 0px;
+    padding: 6px 6px;
+    margin-bottom: 15px;
+	background-color: white !important;
+	/*letter-spacing:18px;*/
+	margin:0px 10% 0px 10%;
+}
+
+ .inputTextMPIN:focus {
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        box-shadow: none;
+        border-radius: 0px;
+    }
+
+
+input[type=radio] {
+  filter: alpha(opacity=0);
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  opacity: 0;
+  position: absolute;
+}
+input[type=radio] + label {
+  background: url(images/radiobtn.png) left top no-repeat;
+  background-position: 0 -23px;
+  cursor: pointer;
+  padding: 14px 0 10px 24px;
+}
+input[type=radio]:checked + label {
+  background-position: 3px 12px;
+}
+
+
+input[type="radio"]:checked + .label-text:before {
+    content: "";
+    animation: effect 250ms ease-in;
+    background: url(../images/RadioBtn_02.png) no-repeat;
+    background-size: 100% 100%;
+}
+input[type="radio"] + .label-text:before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    margin-right: 7px;
+    background: url(../images/RadioBtn_01.png) no-repeat center center;
+    background-size: 100% 100%;
+    margin-top: 4px;
+    float: left;
+}
+
+
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+div.SelectCustIDMainDIv  {
+    margin:0px 10%;
+}
+
+.SelectCustIDMainDIv p {
+    margin-right: 20px;
+    float:left;
+}
+.SelectCustIDMainDIv .label-text {
+    font-size: 14px;
+}
+.SelectCustIDMainDIv label {
+    margin-right: 20px;
+    float:left;
+}
+.RegMobNoMain .inputMainDiv {
+   /* margin-left: 45px;*/
+}
+
+.RegMobNoMain {
+    /*float: left;*/
+    width: 100%;
+}
+.RegMobNoMainLeft {
+    float: left;
+    width: 45px;
+    margin-top: 15px;
+}
+.inputMainDiv {
+    position: relative;
+}
+
+
+input:focus ~ .floating-label,
+input:not(:focus):valid ~ .floating-label {
+    top: -8px;
+    left: 0px;
+    font-size: 11px;
+    opacity: 1;
+}
+
+
+.floating-label {
+    position: absolute;
+    pointer-events: none;
+    left: 0px;
+    top: 15px;
+    transition: 0.2s ease all;
+    color: #9b9b9b;
+	font-size:14px;
+}
+
+.ErrorText {
+    color: #97144d;
+    font-size: 10px;
+    margin-top: -10px;
+}
+
+input[type="button"].EyeIcon {
+    position: absolute;
+    right: 0;
+    top: 12px;
+    cursor: pointer;
+	width:55px !important;
+	background:none;
+	font-weight:bold;
+	margin-right:10% !important;
+	border:none;
+}
+
+
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+
+
+.MPNcontainer input[type="radio"] + .label-text:before{
+	margin-top: 0;
+}
+
+
+
+.SelectCustIDMainDIv .label-text{
+color: #9b9b9b;	
+}
+.login-wrap .ip-text.customerId{
+	margin-top: 20px;
+}
+
+div.SelectCustIDMainDIv.registerRadiobtn{
+	margin-top: 20px
+}
+
+.login-wrap .MPNcontainer .ip-text{
+	padding:0px;
+}
+.MPNcontainer input[type=radio]{
+    left: 0px;
+}
+
+.MPNcontainer .SelectCustIDMainDIv label{
+	position: relative;
+	    font-size: 14px;
+}
+.MPNcontainer .selectoptionBlock.SelectCustIDMainDIv .label-text{
+    color: #959595;	
+}
+
+.MPNcontainer .numberCode{
+	width: 15%;
+	display: inline-block;
+	 margin: 0px;
+	 text-align: center;
+	 background-color : #fff;
+}
+
+.MPNcontainer .mobileNumber{
+	width: 50%;
+	display: inline-block;
+	margin: 0px 24px;
+}
+
+.MPNcontainer .P_Text.TextColorGray{
+	margin-bottom: 12px;
+    display: inline-block;
+    margin-top: 10px;
+    color: #959595;
+}
+.MPNcontainer .RegMobNoMain .SelectCustIDMainDIv label{
+padding-left: 10px;
+color: #9b9b9b;
+}
+
+.MPNcontainer .indiaBlock{
+	clear: both;
+    padding: 20px 33px 0px;
+}
+.MPNcontainer .RegMobNoMain .SelectCustIDMainDIv label.IndiaText{
+	padding-left: 0px;
+	color: #9b9b9b;
+}
+
+.MPNcontainer .InternationBlock{
+	display: none;
+	clear: both;
+    padding: 20px 33px 0px;
+}
+
+
+.MPNcontainer .CUSTIDMain{
+	padding: 0 30px;
+}
+
+.MPNcontainer .indiaOTP,
+.MPNcontainer .interNationalOTP{
+display: none;
+}
+
+.showErrorOTP{
+	clear: both;
+    padding: 0px 33px 0px;
+}
+
+.disableBox{
+	 background: #fff;
+    cursor: no-drop;
+}
+    
+
+	

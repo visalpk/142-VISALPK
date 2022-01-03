@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    var da = $("input").text();
+    da.innerHTML();
+  $("#b1").click(function(){
+    $("p").prepend("<li>"+da+"</li>");
+  });
+  $("#b2").click(function(){
+    $("ol").append("<li>"+da+"</li>");
+  });
+});
+</script>
+</head>
+<body>
+
+<ol>
+  <li>apple</li>
+  <li>samsung</li>
+  <li>vivo</li>
+</ol>
+<input id="input" type="text">
+<button id="b1">Prepend text</button>
+<button id="b2">Append text</button>
+
+</body>
+</html>

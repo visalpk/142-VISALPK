@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  
+<script>
+      $(document).ready(function(){
+        $(".mPIN-form").hide();
+        $(".Debit-form").hide();
+        $(".mPIN").css("background", "none");
+        $(".Debit").css("background", "none");
+
+$(".login").click(function(){
+  $(".mPIN-form").hide();
+  $(".Debit-form").hide();
+  $(".login-form").show();
+  $(".mPIN").css("background", "none");
+  $(".Debit").css("background", "none");
+  $(".login").css("background", "#fff");
+});
+
+$(".Debit").click(function(){
+  $(".Debit-form").show();
+  $(".login-form").hide();
+  $(".mPIN-form").hide();
+  $(".mPIN").css("background", "none");
+  $(".login").css("background", "none");
+  $(".Debit").css("background", "#fff");
+});
+
+$(".mPIN").click(function(){
+  $(".mPIN-form").show();
+  $(".customerid").show();
+  $(".login-form").hide();
+  $(".Debit-form").hide();
+  $(".RegistredMobile").hide();
+  $(".mPIN").css("background", "#fff");
+  $(".customerid").css("background", "#fff");
+  $(".RegistredMobile").css("background", "none");
+  $(".login").css("background", "none");
+  $(".Debit").css("background", "none");
+});
+
+
+$("#cid").click(function(){
+  $(".mPIN-form").show();
+  $(".customerid").show();
+  $(".login-form").hide();
+  $(".Debit-form").hide();
+  $(".RegistredMobile").hide();
+  $(".mPIN").css("background", "#fff");
+  $(".customerid").css("background", "#fff");
+  $(".RegistredMobile").css("background", "none");
+  $(".login").css("background", "none");
+  $(".Debit").css("background", "none");
+});
+
+
+$("#rno").click(function(){
+  $(".mPIN-form").show();
+  $(".customerid").hide();
+  $(".login-form").hide();
+  $(".Debit-form").hide();
+  $(".RegistredMobile").show();
+  $(".mPIN").css("background", "#fff");
+  $(".customerid").css("background", "none");
+  $(".RegistredMobile").css("background", "#fff");
+  $(".login").css("background", "none");
+  $(".Debit").css("background", "none");
+});
+
+$(".btn").click(function(){
+  $(".input").val("");
+});});
+  </script>
+  <title>AXIS BANK | INTERNET BANK</title>
+  <div >
+    <img src="img3.png" style="width: 100%;"></head>
+<body>
+    
+
+    <div class="container">
+      
+     
+      <div class="login w3-bottombar">Login ID</div>
+      <div class="Debit w3-bottombar">Debit card no.</div>
+      <div class="mPIN w3-bottombar">mPIN</div>
+      
+      <div class="login-form">
+        
+        <input class="w3-input" type="text" placeholder="Login ID" ><br />
+        <input class="w3-input" type="password" placeholder="Password" ><br />
+        <div class="btn">log in</div><center>
+        <span><a href="#">I forgot my username or password.</a></span></center>
+     </div>
+
+       <div class="Debit-form">
+          <input class="w3-input" type="text" placeholder="Debit Card No."><br />
+          <input class="w3-input" type="text" placeholder="Card No."><br />
+          <input class="w3-input" type="password" placeholder="PIN No." ><br />
+          <div class="btn">log in</div> <center>
+          <span><a href="#"  >I forgot my username or password.</a></span></center>
+       </div>
+      
+     
+       <div class="mPIN-form">
+        
+  
+            
+            <input type="radio" id="cid" name="mform" value="Customer ID"/> Customer ID   
+            
+            <input type="radio" id="rno" name="mform" value="Registred Mobile No."> Registred Mobile No. <br/> 
+            
+            <br>
+
+        <div class="customerid">
+            <input class="w3-input" type="text" placeholder="Customer ID"><br />
+            <input class="w3-input" type="password" placeholder="mPIN" ><br />
+        <div class="btn">log in</div></div>
+
+        <div class="RegistredMobile">
+           
+  
+            
+                <input class="w3-input" type="radio" id="ind" name="mform" value="Customer ID"/> India                
+                <input class="w3-input" type="radio" id="int" name="mform" value="Registred Mobile No."> INternational <br><br>
+
+                <input type="text" placeholder="Enter Mobile No." class="input"><br /><br>
+                <input type="text" placeholder="mPIN" class="input"><br /><br>
+                <div class="btn">Go</div>
+               
+        </div>
+
+        <center><span><a href="#">I forgot my username or password.</a></span></center>
+     </div>
+      
+    </div>
+ 
+
+
+
+
+    
+</body>
+</html>

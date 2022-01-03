@@ -1,0 +1,90 @@
+//... 
+
+//1) Rest operator
+//2) Spread Operator
+
+
+var arr = [4,5,6,7,8,89,9]
+var names = ["rajesh","raj"]
+
+//new = ...arr
+
+console.log(...arr);
+
+var result = arr + names //taking as string and putting
+var result1 = [arr,names] //making arrray of array
+var result2 = [...arr,...names]
+ 
+console.log(typeof result2);
+console.log(result2);
+
+
+function addition(x,y,z){
+  return x+y+z;
+}
+
+//... 
+
+//1) Rest operator
+//2) Spread Operator
+
+
+var arr = [4,5,6,7,8,89,9]
+var names = ["rajesh","raj"]
+
+
+function addition1(x,y,z){
+  return x+y+z;
+}
+
+//rest operator --> variable number of arguments
+function addition2(x,y,...z){
+  //return x+y+z
+  res =0
+  
+  res = x+y
+  for(let i of z){
+    res += i
+  }
+  return res;
+  
+}
+
+console.log(addition2(10,20,30,40,50,45,67));
+
+1) Give third array which is addition of even items from both array.
+
+arr1 = [10,20,30,40,50,45,67];
+arr2 = [34,23,56,57,89,22,11];
+
+//Two more loops 
+//1) for-of loop
+//2) for-in loop
+
+var myarr = [1,2,34,45,6,6,7];
+
+for(let i of myarr ){
+  //console.log(typeof i)
+}
+
+var myarr1 = [true,34,35.0,"Rajesh"]
+
+//for-of loop gives item
+for(let i of myarr1 ){
+  console.log(typeof i)
+}
+
+//for-in loop --> gives index or key
+for(let j in myarr1 ){
+  console.log(myarr1[j])
+}
+
+
+name = "Rajesh Singh"
+
+for(let i of name) console.log(i);
+
+for(let i in name) console.log(i);
+
+2) WAP to calculate whether given matrix is identity matrix of 3*3 or not?
+

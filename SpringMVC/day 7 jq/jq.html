@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+    crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(
+            function(){
+            //     var text=$("#t2").text();
+            //    alert(text);
+            //     var html=$("#t2").html();
+            //    alert(html);
+            //     var val=$("#t2").val();
+            //     alert(val);
+
+
+
+                $("#b1").click(function(){
+                    var d=$('a').attr("href");
+                    var t=$('p').text();
+                    alert("the paragraph contains "+ t );
+                    var r=$('p').attr("id");
+                    alert("the paragraph with id "+ r);
+
+
+
+                });
+            }
+        );
+    </script>
+<body>
+    <input type="text" id="t1" value="text"/>
+    <p id="t2" value="hello">paragraph 1: this is paragraph 1</p><hr>
+    <p id="t3" value="hello">paragraph 2: this is paragraph 2</p>
+    <button id="b1">button</button>
+    <a href="http://google.co.in">google</a>
+</body>
+</html>

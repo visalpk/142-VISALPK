@@ -1,0 +1,5 @@
+By PowerShell input command: “wsl --install”
+Install WSL: https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi 883
+Restart Docker → OK
+============================================
+docker run -d -p 8089:8089 --name my-docker

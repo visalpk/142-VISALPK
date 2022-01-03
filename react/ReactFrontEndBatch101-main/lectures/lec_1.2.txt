@@ -1,0 +1,29 @@
+//OOPS
+
+//class --> a template or bluprint
+
+//object --> state and behaviour / properties and functionalities
+
+
+a = {};
+
+console.log(a);
+
+class Student1{
+  
+  //used for initialization
+  constructor(rollno,name){
+    this.rollno = rollno;
+    this.name = name;
+  }
+  
+  myIntro(){
+    console.log("Hi, This is "+this.name+ " and my rollno "+this.rollno);
+  }
+}
+
+st1 = new Student1(101,"Rajesh");
+st1.myIntro();
+
+st2 = new Student1(102,"Suraj");
+st2.myIntro();

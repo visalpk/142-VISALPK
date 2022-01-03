@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="style.css">
+<script> 
+    $(document).ready(function(){
+
+        $(".dropdown-content").hide();
+       
+
+      $("#ff").click(function(){
+        $(".dropdown-content").slideToggle("slow");
+      });
+    });
+    </script>
+</head>
+<body>
+
+<div class="navbar" id="nav">
+  <a href="#home">Home</a>
+  <a href="#news">About Us</a>
+  <a href="#news">Contact</a>
+
+  <div class="dropdown" id="panel2">
+    <button class="dropbtn">Laptop
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Macbook</a>
+      <a href="#">Lenovo</a>
+      <a href="#">Alienware</a>
+    </div>
+  </div> 
+  <div class="dropdown" id="panel2">
+    <button class="dropbtn">Mobile Accessories
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Apple</a>
+      <a href="#">Redmi</a>
+      <a href="#">Vivo</a>
+    </div>
+  </div> 
+</div>
+
+
+
+</body>
+</html>z

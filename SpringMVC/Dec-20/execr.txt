@@ -1,0 +1,9 @@
+findUserByLastnameAndEmail
+
+findUserByLastnameAndAge-pass 2param in doa class
+string of first names
+Exercise:
+
+	1. Named Query 
+	2. Projection Query
+	3. Refactor code - display/update/delete – introduce layering. Move the database operation from    	    controller to DAO. i.e. Create Service Layer and Create DAO layer.

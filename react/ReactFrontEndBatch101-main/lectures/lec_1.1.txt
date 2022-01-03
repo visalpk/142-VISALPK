@@ -1,0 +1,160 @@
+JavaScript --> open source, oops, dynamic typed language --> providing interactiy into client side web pages --> JIT compilation --> first class function
+
+webclient --> bunch of HTML web pages
+
+JS became to be used into both client as well as server
+
+Node.js --> run time enviornment for running your JS application into server side.
+
+client - server
+
+Frontend --> Angular/React.js/Vue.js
+
+backend --> Express.js
+
+
+Angular vs React
+Framework / Library
+typescript / javascript
+
+Java vs JavaScript --> javascript has nothing to do with java
+
+dynamic typed language --> you don't need to specify type of a variable in javascript, whichever value is assigned it takes that value.
+python, js
+
+static typed language --> c, c++,java
+
+//console.log("Hello world");
+
+//console.log('Hello world');
+
+//variable --> placeholder
+a = 10;
+console.log(typeof a);
+
+a = "Rajesh";
+
+console.log(typeof a);
+
+first class function
+//defining function
+
+function addition(a,b){
+  console.log(a+b);
+}
+
+//calling the function
+addition(10,15);
+
+
+//first class function
+//using function assignment like we use variable 
+add = function addition(a,b){
+  console.log(a+b);
+}
+
+console.log(typeof add);
+add(25,35);
+//console.log(add(25,35));
+
+
+//Array -- collection of items
+
+a = [1,23,4,5];
+a = [1,2,true,"Rajesh",{}];
+
+console.log(a);
+
+//calculate sqaue of all items and give new array?
+a= [1,2,3,4,5];
+
+for(i=0; i<a.length; i++ ){
+  console.log(a[i]**2);
+}
+
+//Array -- collection of items
+
+a = [1,23,4,5];
+a = [1,2,true,"Rajesh",{}];
+
+console.log(a);
+
+//calculate sqaue of all items and give new array?
+a= [1,2,3,4,5];
+
+c = a.map( i => i**2);
+
+console.log(c);
+
+d = a.reduce( (i,j) => i+j)
+
+console.log(d);
+
+e= a.filter( i => i%2==0);
+
+console.log(e);
+
+
+function return
+function addition(a,b){
+  console.log(a+b);
+}
+
+addition(10,20) + 50;
+
+function addition1(a,b){
+  return a+b;
+}
+
+addition1(10,20) + 50;
+
+//return multiple output as array or object
+function calculator(a,b){
+  add = a+b;
+  sub = b-a;
+  
+  return {add,sub};
+}
+
+console.log(calculator(10,30));
+
+//return multiple output as array or object
+function calculator(a,b){
+  add = a+b;
+  sub = b-a;
+  
+  return {add,sub};
+}
+
+//var {result1,result2} = calculator(10,30);
+
+//destructuring as an object
+var {add,sub} = calculator(10,30);
+
+console.log(add);
+console.log(sub);
+
+//console.log(calculator(10,30));
+
+//return multiple output as array or object
+function calculator(a,b){
+  add = a+b;
+  sub = b-a;
+  
+  return [add,sub];
+}
+
+//destructuring as array
+var [result1,result2] = calculator(10,30);
+
+//console.log(typeof result1);
+console.log(result1);
+console.log(result2);
+
+//console.log(calculator(10,30));
+
+
+
+
+
+

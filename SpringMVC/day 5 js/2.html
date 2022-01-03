@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      #formContent {
+       
+        -webkit-border-radius: 10px 10px 10px 10px;
+        border-radius: 10px 10px 10px 10px;
+        background: #fff;
+        padding: 30px;
+        width: 90%;
+        max-width: 450px;
+        position: relative;
+        padding: 10px;
+        -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+        box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+        text-align: center;
+        /* centering  */
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        margin-bottom: auto;
+      }
+      </style>
+</head>
+<body >
+    <script>
+        const arr=new Array();
+        function populateDataInArray()
+        {
+            alert("Called");
+            arr[0]=10;
+        }
+        function addElementToArray()
+        {
+var i=document.getElementById("val1").value;
+
+arr.push(i);
+
+        }
+
+        function ShowElementByIndex()
+        {
+ 
+            var i=document.getElementById('ind').value;
+        var data=arr[i];
+        var t='<ol type="a">';
+    
+        t+='<li>' + data + '</li>';       
+
+        t+='</ol>';
+
+
+        document.getElementById('div1').innerHTML=t;
+        }
+
+        function popdata()
+    {
+        var i=document.getElementById('ind2').value;
+        var data=arr.splice(i)
+        var t='<ol type="a">';
+    
+    t+='<li>' + data +' is removed' +'</li>';       
+
+    t+='</ol>';
+    document.getElementById('div1').innerHTML=t;
+    }
+
+        function showArrayElements()
+        {
+            var t='<ol type="a">';
+    for (let index = 0; index < arr.length; index++) {
+        t+='<li>' + arr[index] + '</li>';
+        
+    }
+    t+='</ol>';
+    
+document.getElementById('div1').innerHTML=t;
+        }
+    </script>
+<form>
+     <div id="formContent">
+            
+    
+
+    <!-- <input type="button" onclick="populateDataInArray()" value="Populate"/> -->
+    <label for="i">Enter Element value</label>
+    <input type="text" name="val1" id="val1" />
+    <input type="button" value="Add" onclick="addElementToArray()"/><hr/>
+    <br/>
+    <label for="i">Find by Index</label>
+    <input type="text" name="ind" id="ind" />
+    <input type="button" value="Find" onclick="ShowElementByIndex()"/><hr/>
+    <br/>
+    <label for="i">Delete by Index</label>
+    <input type="text" name="ind2" id="ind2" />
+    <input type="button" value="Pop array" onclick="popdata()"/><hr/>
+    <br/>
+    <input type="button" value="Show" onclick="showArrayElements()"/><hr/>
+    <div id="div1">
+    </div>  </div>
+    <hr/>
+</form>
+
+</script>
+</body>
+</html>

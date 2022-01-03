@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+ <style>
+.topnav .search-container {
+    float: right;
+  }</style>
+<body>
+
+<div class="w3-container">
+ 
+  <div class="w3-bar w3-black">
+    <button class="w3-bar-item w3-button tablink w3-red" onclick="opentab(event,'Home')">Home</button>
+    <button class="w3-bar-item w3-button tablink" onclick="opentab(event,'About us')">About us</button>
+    <button class="w3-bar-item w3-button tablink" onclick="opentab(event,'Contact')">Contact</button>
+  </div>
+  
+  <div id="Home" class="w3-container w3-border tab">
+    <h2>  </h2>
+    <p></p>
+  </div>
+
+  <div id="About us" class="w3-container w3-border tab" style="display:none">
+    <h2> </h2>
+    <p> </p> 
+  </div>
+
+  <div id="Contact" class="w3-container w3-border tab" style="display:none">
+    <h2> </h2>
+    <p> </p>
+  </div>
+  <div  class="dropdown">
+    <button class="dropbtn">Dropdown 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div> 
+  
+</div>
+<script>
+function opentab(evt, tabName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("tab");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+{
+    "IBM":{
+        "IBM INDIA":[
+                    {   "Kolkata":
+                    {"Permanent":[
+                     {"emp":"emp1","id":110805,"type":"P"},
+                     {"emp":"emp2","id":110833,"type":"P"}],
+                     "Contracted":[
+                     {"emp":"emp3","id":110806,"type":"C"},
+                     {"emp":"emp4","id":110834,"type":"C"} 
+                     
+                     ]
+                    }
+                    },
+                    {   "chennai":
+                    {"Permanent":[
+                     {"emp":"emp5","id":110805,"type":"P"},
+                     {"emp":"emp6","id":110833,"type":"P"}],
+                     "Contracted":[
+                     {"emp":"emp7","id":110806,"type":"C"},
+                     {"emp":"emp8","id":110834,"type":"C"} 
+                     
+                     ]
+                    }
+                    }
+
+                   
+
+
+                 ]}
+}

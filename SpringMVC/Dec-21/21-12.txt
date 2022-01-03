@@ -1,0 +1,161 @@
+9-10---------------------------------------------------------------------------------------------------------------------
+
+1.JSON
+2.SPA -Single Page Application
+3.Exercise 1:
+
+   Create a Json for Camera  comprising of Make, Model, DSLR (true/false), price.
+
+   Validate the Json using https://www.jsonlint.com/
+4.Excercise:2
+Array json
+{
+
+	"name": "Amit",
+	"age": 21,
+	"salary": 20000,
+	"cars": ["FORD", "HYUNDAI", "AUDI"]
+
+}
+
+
+10-11--------------------------------------------------------------------------------------------------------------------
+1.Exercise 3:
+
+Create a list of cameras
+
+Validate the Json using https://www.jsonlint.com/
+
+{
+	"persons": [{
+
+			"name": "Amit",
+			"age": 21,
+			"salary": 20000,
+			"cars": ["FORD", "HYUNDAI", "AUDI"]
+
+		},
+		{
+
+			"name": "Samit",
+			"age": 23,
+			"salary": 25000,
+			"cars": ["MAHINDRA", "HYUNDAI", "AUDI"]
+
+		}
+	]
+}
+
+2.https://codebeautify.org/jsonviewer/cbf891bf
+
+3.Exercise 4:
+
+Create a university json
+ that will have colleges having name, address
+
+Each college will have some list of students
+
+Each student will have name ,id (integer), stream (phy/chem/maths) 
+
+ 
+
+Validate the Json using https://www.jsonlint.com/
+
+
+
+11-12-------------------------------------------------------------------------------------------------------------------
+
+EX5:IBM
+
+
+12-1-------------------------------------------------------------------------------------------------------------------
+https://start.spring.io/
+
+2-3-------------------------------------------------------------------------------------------------------------------
+https://www.postman.com/downloads/
+3-4-------------------------------------------------------------------------------------------------------------------
+  =====================HOW TO STOP THE 8080 ALREADY IN USE===================
+console---
+1.click --xx in right side of console 
+2.now click red button 
+3. run application again
+4.problem solved
+4-5:--------------------------------------------------------------------------------------------------------------------
+======================HTTP RESPONSE POST===================================
+
+@PostMapping(path="/first1")
+	 public ResponseEntity<String> save(String input)
+	 {
+		
+		 HttpHeaders header = new HttpHeaders();
+	     header.add("header1", "This is my header 1");
+	     header.add("header2", "This is my header 2");
+	     return ResponseEntity.status(HttpStatus.CREATED).headers(header).body("Hello");
+		
+		
+	 }
+=======================PRINT DATA USING PATH VARIABLE=========================
+Exercise Pathvariable:
+@GetMapping("/second/{id}")
+		public int sayHello1(@PathVariable int id)
+		{
+			
+			return id;
+			
+		}
+
+========================================================================
+@PostMapping(path="/reqhdr")
+	 public ResponseEntity<String> reqhdr(        
+			 @RequestHeader(name = "X-COM-PERSIST", required = true) String headerPersist,
+             @RequestHeader(name = "X-COM-LOCATION", required = false, defaultValue = "ASIA") String headerLocation,
+             @RequestBody String str)
+	 {
+		 
+		 
+		 String returnVal="X-COM-PERSIST="+headerPersist+"X-COM-LOCATION="+headerLocation;
+		 
+		 return ResponseEntity.ok(returnVal);
+		  	
+		
+	 }
+5:6---------------------------------------------------------------------------------------------------------------------
+
+@PostMapping(path="/getStudent")
+		 public ResponseEntity<Student> getStudent(@RequestBody String input)
+		 {
+	 		 
+	 		 System.out.println("input="+input);	
+	 		 Student st= new Student("st1","Jayanta1");
+	 		 
+			 return ResponseEntity.status(HttpStatus.CREATED).header("X-INPUT", input)
+				 .body(st);
+			   	
+			
+		 }
+
+========================================================================
+@PostMapping(path="/processStudents")
+		 public ResponseEntity<Void> processStudents(@RequestBody List<Student> studentList)
+		 {
+	 		 for(Student stu:studentList)
+	 		 {
+	 			 System.out.println("Name="+stu.getStuName());
+	 			 
+	 		 }
+	 		
+	 		
+  		 
+			 return ResponseEntity.status(HttpStatus.CREATED).header("X-INPUT", "Test").build();
+				 
+			   	
+			
+		 }
+==========================================================
+component scan
+package name=com.marticus.demo
+
+spring component scan scans only the things inside the package(ie., com.marticus.demo and its sub packages like com.marticus.demo.controller ,com.marticus.demo.model )
+
+REEST API
+

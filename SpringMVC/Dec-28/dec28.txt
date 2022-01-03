@@ -1,0 +1,87 @@
+app.properties
+=------------------------------------------
+serviceregistery
+
+eureka.client.registerWithEureka = false
+eureka.client.fetchRegistry = false
+server.port = 8761
+=--------------------------------------------------
+technology
+
+eureka.client.register-with-eureka=true
+eureka.client.fetch-registry=true
+eureka.client.service-url.defaultZone=http://localhost:8761/eureka/
+eureka.client.instance.hostname=localhost
+spring.application.name=STUDENT-SERVICE
+
+
+=====================================================
+pom.xml
+<properties>
+	<java.version>1.8</java.version>
+	<spring-cloud.version>2021.0.0</spring-cloud.version>
+</properties>
+======================================================
+<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.6.2</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+=============================================================
+gateway:
+
+spring.application.name=API-GATWAY
+server.port=9191
+eureka.client.register-with-eureka=true
+eureka.client.fetch-registry=true
+eureka.client.service-url.defaultZone=http://localhost:8761/eureka/
+eureka.client.instance.hostname=localhost
+
+ 
+
+
+spring.cloud.gateway.routes[0].id=STUDENT-SERVICE
+spring.cloud.gateway.routes[0].uri=lb://STUDENT-SERVICE
+spring.cloud.gateway.routes[0].predicates[0]=Path=/students/**
+==============================================================
+4-5:
+config{
+app.prop
+
+spring.application.name=CONFIG-SERVICE
+server.port=9999
+
+spring.cloud.config.server.git.uri=https://gitlab.com/jk_tin/configserver.git
+spring.cloud.config.server.git.clone-on-start=true}
+==================================================================
+technology{
+app.properties
+
+spring.application.name=TECH-SERVICE
+spring.config.import = optional:configserver:http://localhost:9999
+=====================================================================
+bootstrap.properties
+
+spring.cloud.config.enabled=true
+spring.cloud.config.name=CONFIG-SERVICE
+spring.cloud.config.uri=http://localhost:9999
+
+=======================================================================
+pom.xml
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-config</artifactId>
+			<optional>true</optional>
+		</dependency>
+}
+--------------------------------------------------------------------------------------------------------------------
+https://hub.docker.com/
+and register
+https://docs.docker.com/desktop/windows/install/
+https://www.sonarqube.org/downloads/
+https://hub.docker.com/
+https://docs.docker.com/desktop/windows/install/
+https://www.sonarqube.org/downloads/
+
+

@@ -1,0 +1,18 @@
+{
+    "University":{
+        "colleges":[
+                    {   "CollegeName":"JayaCollege",
+                        "Address":"Nemilichery",
+                        "Students":[{"name":"balaji","id":110805,"stream":"Maths"},
+                            {"name":"surendar","id":110833,"stream":"physics"}  ]
+                    },
+
+                    {   "CollegeName":"VelTechCollege",
+                        "Address":"Avadi",
+                        "Students":[{"name":"karthi","id":113014,"stream":"Chem"},
+                            {"name":"praveen","id":113022,"stream":"physics"}  ]
+                    }
+
+
+                 ]}
+}

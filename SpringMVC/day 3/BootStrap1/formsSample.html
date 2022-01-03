@@ -1,0 +1,120 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<title>This is bootstrap template</title>
+<meta name="viewport" 
+content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+</head>
+<body>
+
+
+<div style="margin-top:10px;padding:0px" class="container">
+<div class="jumbotron">
+<div class="page-header">
+<h1>Bootstrap Forms</h1>
+</div>
+<p>
+In Bootstrap, there are three types of form layouts:
+<ol>
+<li>Vertical form (this is default)</li>
+<li>Horizontal form</li>
+<li>Inline form</li>
+</ol>
+
+<h1>Bootstrap Form Rules</h1>
+
+There are three standard rules for these 3 form layouts:
+<ol>
+<li>Always use &lt;form role="form" &gt; (helps improve accessibility for people using screen readers)</li>
+<li>Wrap labels and form controls in &lt;div class="form-group" &gt; (needed for optimum spacing)</li>
+<li>Add class .form-control to all textual &lt;input&gt;, &lt;textarea&gt;, and &lt;select&gt; elements.</li>
+</ol>
+ </p>
+  </div>
+ </div>
+ 
+ 
+ <div class="container">  
+  <h1>Vertical Form Example</h1>  
+  
+<form style="width:300px">  
+  <div class="form-group">  
+    <label for="exampleInputEmail1">Email address</label>  
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">  
+  </div>  
+  <div class="form-group">  
+    <label for="exampleInputPassword1">Password</label>  
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">  
+  </div>  
+    
+  <button type="submit" class="btn btn-default">Login</button>  
+</form>  
+  
+</div>  
+<hr/>
+
+<p><mark>Note:</mark>In Bootstrap Inline forms, all elements are inline, left-aligned, and the labels are alongside.
+
+This example is only applied to forms within viewports that are at least 768px wide!</p>
+<div class="container">  
+  <h2>Inline form Example</h2>  
+  <form class="form-inline" role="form">  
+    <form style="width:300px">  
+  <div class="form-group">  
+    <label for="exampleInputEmail1">Email address</label>  
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">  
+  </div>  
+  <div class="form-group">  
+    <label for="exampleInputPassword1">Password</label>  
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">  
+  </div>  
+    
+  <button type="submit" class="btn btn-default">Login</button>  
+</form>  
+  
+</div>  
+
+<hr/>
+<mark>Note:</mark>
+<p>
+Bootstrap Horizontal Form
+
+You have to add some additional rules if you want to create a horizontal form.
+
+Additional rules for a horizontal form:
+
+Add class .form-horizontal to the &lt;form&gt; element
+Add class .control-label to all &lt;label&gt; elements
+</p>
+<div class="container">  
+  <h2>Horizontal form Example</h2>  
+  <form class="form-horizontal" role="form">  
+    <form style="width:300px">  
+  <div class="form-group">  
+      <label class="control-label col-sm-2" for="email">Email:</label>  
+      <div class="col-sm-10">  
+        <input type="email" class="form-control" id="email" placeholder="Enter email">  
+      </div>  
+    </div>  
+    <div class="form-group">  
+      <label class="control-label col-sm-2" for="pwd">Password:</label>  
+      <div class="col-sm-10">            
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password">  
+      </div>  
+    </div>  
+    
+  <div class="form-group">          
+      <div class="col-sm-offset-2 col-sm-10">  
+        <button type="submit" class="btn btn-default">Submit</button>  
+      </div>  
+    </div>  
+  </form>  
+</div>  
+<script src="bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/js/jquery-3.1.1.min.js"></script>
+<script src="bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</body>
+
+
+</html>
+

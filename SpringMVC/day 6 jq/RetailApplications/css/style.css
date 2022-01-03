@@ -1,0 +1,202 @@
+@charset "UTF-8";
+/* CSS Document */
+*{padding: 0; margin:0}
+ul li{list-style: none}
+body{font-family: Arial, Helvetica, "sans-serif";}
+.header{
+	width: 100%;
+	height: 100px;
+ background:#97144d;	mix-blend-mode: multiply;
+	background-image: linear-gradient(88deg, #c81451, #9b103f);
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    font-family:  Arial, Helvetica,"sans-serif";
+    font-size: 16px;
+    text-align: left;
+    color: #ffffff;
+}
+.header a {
+    color: #fff;
+    text-decoration: none;
+    padding-left: 42px;
+}
+
+.logo {
+    padding: 33px 10px 33px 70px;
+    display: inline-block;
+}
+.current-page {
+    float: left;
+    padding: 7px 10px;
+}
+
+.logo img {
+    float: left;
+}
+.right-box {
+    float: right;
+    padding: 5px;
+	/* padding: 42px 70px;*/
+	margin-top:-45px;
+	margin-right:20px;
+}
+
+.login-tab-wrap {
+   width:390px; /*captcha-changes*/
+        margin: 10px auto 0;
+}
+.login-nav-link {
+    color: #959595;
+    float: left;
+    font-size: 16px;
+    line-height: 16px;
+    width: 30%;
+    text-align: center;
+    padding: 10px 5px;
+    border: 1px solid transparent;
+    border-bottom-color: #d7d7d7;
+    cursor: pointer;
+}
+.login-nav-link.active {color: #97144d;
+    border-bottom: solid 2px #97144d;
+}
+
+.login-wrap .ip-text {
+    border: 0 none;
+    /* float: left; */
+    /* height: 30px; */
+    width: 100%;
+    padding: 0 10px;
+    font-size: 16px;
+    /*line-height: 34px;*//*Modify by Ajay Y on 02feb2018*/
+    color: #363636;
+    box-sizing: border-box;
+	border: none;
+	outline: none;
+	margin-top: 50px;
+    border-bottom: solid 1px #d8d8d8;
+}
+
+.error-text {
+    font-size: 11px;
+    color: #e8664e;
+    line-height: 13px;
+    margin-top: 10px;
+}
+input.inner-btn {
+    height: 40px;
+    border: none;
+    border-radius: 2px;
+    background-color: #97144d;
+    width: 100%;
+    color: #fff;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+input[type="button"].inner-btn {
+     height: 40px !important;
+    border: none;
+    border-radius: 2px;
+    background-color: #97144d;
+    width: 100% !important;
+    color: #fff;
+    font-size: 14px;
+    margin: 40px 0px !important;
+}
+
+
+.chkbox-wrpr {
+    margin-top: 30px;text-align: center; position: relative;
+}
+.use-virtual-keyboard {
+	font-size: 14px;
+	line-height: 0.86;
+	text-align: left;
+	color: #97144d;
+}
+
+.login-links {
+    width: 450px;
+    margin: 40px auto;
+    color: #97144d;
+}
+.login-links a{text-decoration: none;color: #97144d;font-size: 14px;padding: 0 10px;}
+.login-links a:hover{color: #9a0f40}
+::-webkit-input-placeholder { color:#d8d8d8; }
+::-moz-placeholder { color:#d8d8d8; } /* firefox 19+ */
+:-ms-input-placeholder { color:#d8d8d8 !important; line-height:normal !important; }  .IE-placeholder{ color:#d8d8d8 !important; line-height:normal !important; }  /* ie */
+input:-moz-placeholder { color:#d8d8d8; }
+.chkbox-wrpr input[type=checkbox] {
+    opacity: 0;
+ display:none;    position: absolute;
+    left: 22%;
+    z-index: 22;
+    top: 4px;
+}
+input[type=checkbox] + label {
+    background-image: url(../images/keyboard.png);
+    background-repeat: no-repeat;
+    padding: 6px 0 0 27px;
+}
+.login-links span{color: #d8d8d8}
+input[type=checkbox]:checked + label {
+    background-image: url(../images/keyboard-unchecked.png);
+	color: #d8d8d8;
+	padding: 6px 0 0 27px;
+}
+@media (max-width: 480px) {
+	.right-box, .current-page, .login-links span{display:none;}
+	.login-links {width: 295px; text-align: center}
+	
+	.login-links a{display: block;    padding-bottom: 20px;}
+	.header-band{background-size:contain !important;}
+	.login-tab-wrap{margin-top:0 !important;}
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
+	.header-band{background-size:contain !important;}
+	.right-box{margin-top:-45px;}
+	.header-band::after{display:none; }
+
+}
+
+@media only screen and (min-device-width : 480px) and (max-device-width : 767px){
+.header-band{background-size:contain !important;}
+.right-box{margin-top:-45px;}
+.right-box, .current-page, .login-links span{display:none;}
+.header-band::after{display:none; }
+}
+
+@media only screen and (min-device-width :1px) and (max-device-width : 480px){
+.header-band::after{display:none; }
+}
+
+
+
+
+
+.header-band{background:url(../images/DigitalPathway02.png) no-repeat top left; height:85px; width:100%;}
+.header-band::after{background:#97144d; height:24px; width:2500px; left:1000px; right:0; position:relative; float:left; content:''; }
+
+
+	
+
+.right-box .tab-wrap .tab-link ul li{display:inline-block;}
+.right-box .tab-wrap .tab-link ul li:first-child{border-right:1px solid #97144d; padding-right:5px;}
+.right-box .tab-wrap .tab-link ul li a{color:#97144d; font-weight:bold;font-size:13px;}
+
+
+
+	
+
+
+/*29-6-2019 NEW CSS Captcha*/
+.input-list-captcha{margin-top:20px;width:145px !importamt;float:left;width:120%}
+.lt-userProfile-img img{height:30px !important}
+.captcha-button{float:left;margin-right:8px !important; margin-top:5px;}
+input[type='button']{margin:2px !important; cursor: pointer; border:3px;border-radius:10px;width:25px !important;height:20px !important;}
+.captcha-text{float:left;margin-top:10px}
+.captcha-textbox-main-box{width:120%;float:left;margin-bottom:10px;}
+.captcha-textbox-main{float:left}
+.captcha-textbox-main input{margin-top:15px;height:20px;width:132px; padding:0 10px;}
+.captcha-textbox-side-text{margin-top:20px !important;margin-left:10px !important;float:left}

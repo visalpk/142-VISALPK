@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      #formContent {
+        -webkit-border-radius: 10px 10px 10px 10px;
+        border-radius: 10px 10px 10px 10px;
+        background: #fff;
+        padding: 30px;
+        width: 90%;
+        max-width: 450px;
+        position: relative;
+        padding: 10px;
+        -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+        box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    justify-content: center;
+    width: 100%;
+    min-height: 100%;
+    padding: 20px;
+  }
+ 
+      </style>
+</head>
+<body>
+  
+  
+    <centre> <div class="wrapper" id="formContent">
+              
+              <div><h3 >concate</h3><p id="p1"></p></div> <hr/>
+             
+      </div></centre> 
+    <script>
+    let s="Hello World Welcome Javascript";
+    var g=" its 11:45";
+    var l="";
+    l=l.concat(s,g);
+
+    document.getElementById("p1").innerHTML=l;
+    </script>
+</body>
+</html>

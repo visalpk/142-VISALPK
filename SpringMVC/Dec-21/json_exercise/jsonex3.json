@@ -1,0 +1,19 @@
+{
+    "camera":[
+
+                    {   "make":"cannon",
+                        "Model":"k2021",
+                        "DSLR":true,
+                        "Year":2020,
+                        "categories":["below 10K","rating 4"] },
+
+
+                    {
+                        "make":"Nikon",
+                        "Model":"M2021",
+                        "DSLR":true,
+                        "Year":2021,
+                        "categories":["below 30K","rating 4.5"]  }
+
+             ]
+}

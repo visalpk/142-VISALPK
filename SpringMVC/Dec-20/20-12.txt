@@ -1,0 +1,114 @@
+9-10:----------------------------------------------------------------------------------------------------------
+
+https://www.javatpoint.com/hql
+https://www.tutorialspoint.com/hibernate/hibernate_query_language.h
+
+
+10-11:---------------------------------------------------------------------------------------------------------------
+
+Create a teacher class/table
+
+Teacher Id
+Teacher Name
+Subject (sample value Physics)
+Degree (sample value MSC)
+
+
+              +++++++++++++++++++++++++++++++++++++
+
+
+<property name="hibernate.hbm2ddl.auto" value="update"/>
+//create table without creating a table in msql db
+
+
+11-12:---------------------------------------------------------------------------------------------------------------
+mysqlpassword:Calcutta202012$
+
+               ++++++++++++++++++++++++++++++++++++
+
+
+jdbc:mysql://localhost:3306/db-name?
+useUnicode=true&characterEncoding=UTF-8&
+allowPublicKeyRetrieval=true&
+useSSL=false
+
+
+12-1:----------------------------------------------------------------------------------------------------------
+                                                                                  HOW TO SOLVE COMPILER WAR ERROR:-->
+
+     <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-war-plugin</artifactId>
+            <version>3.3.1</version>
+        </plugin>
+    </plugins>
+
+               ++++++++++++++++++++++++++++++++++++
+
+http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd
+
+when it should point to
+
+http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd
+
+               +++++++++++++++++++++++++++++++++++++
+<property name="hibernate.connection.url">jdbc:mysql://127.0.0.1/training?useSSL=false</property>
+<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/db1?useSSL=false</property>
+		
+
+                                                                                        HOW to solve public key retreival: -->
+
+<property name="hibernate.connection.url">jdbc:mysql://127.0.0.1/training?useSSL=false</property>
+<property name="hibernate.connection.url">jdbc:mysql://127.0.0.1/training?allowPublicKeyRetrieval=true</property>
+                +++++++++++++++++++++++++++++++++++++
+EXERCISE
+
+Create following  classed called
+
+Person – with id, name ,aadhar
+ Aadhar – with id, number (string)
+
+
+In the App class – create aadhar object.. Pass to Person object and save person object
+
+OneToOne
+
+
+
+		
+
+2-3:--------------------------------------------------
+                                                                                      HOW to solve mapping error:--->
+NOTE:  add mapping to get out put-----> hibernate.cfg.xml
+
+
+3-4:----------------------------------------------------
+5-6:-----------------------------------------------------
+CREATE TABLE `Customer` (
+  `id` int(11) unsigned NOT NULL,
+  `name` varchar(20) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `Address` (
+  `id` int(11) unsigned NOT NULL,
+  `address` varchar(20) DEFAULT NULL,
+  `country` varchar(20) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+WRAP UP---------------------------------
+
+1.one to one
+2.one to many
+3.many to many
+4.ACID
+5.DIRTY, NON REPETABLE READ, PHANTHOM READ
+6.Isolation Levels
+7.Spring Transactional Management(Programmatic and declarative)
+8.Transactional Propagation
+
+
+

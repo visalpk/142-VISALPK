@@ -1,0 +1,63 @@
+<table border="1">
+		<tr>
+			<th>Employee Id</th>
+			<th>First Name</th>
+			<th>Last Name</th>
+		</tr>
+		<c:forEach items="${employees}" var="employee">
+			<tr>
+				<td>${employee.id}</td>
+				<td>${employee.firstName}</td>
+				<td>${employee.lastName}</td>
+			</tr>
+		</c:forEach>
+	</table>
+List<EmployeeVO> empList=employeeManager.getAllEmployees();
+		model.addAttribute("employees",empList );
+
+Session session = HibernateUtil.getSessionFactory().openSession();
+		session.beginTransaction();
+		//select * from Users -- equivalent SQL
+		List Users =session.createQuery("From Users").list();
+		ArrayList <Users> uList = new ArrayList<Users>();
+		for (Iterator iterator2 = Users.iterator(); iterator2.hasNext();){
+            Users u = (Users) iterator2.next(); 
+            
+            uList.add(u);
+            System.out.println("User: " + u.getUserName()); 
+         }
+		model.addAttribute("uList",uList );
+-------------------------
+@RequestMapping(value = "/userlist", method = RequestMethod.GET)
+	public String user(Model model) {
+		 //HQL - Hibenate Query Language
+		Session session = HibernateUtil.getSessionFactory().openSession();
+		session.beginTransaction();
+		//select * from Users -- equivalent SQL
+		List Users =session.createQuery("From Users").list();
+		ArrayList <Users> uList = new ArrayList<Users>();
+		for (Iterator iterator2 = Users.iterator(); iterator2.hasNext();){
+            Users u = (Users) iterator2.next(); 
+            
+            uList.add(u);
+            System.out.println("User: " + u.getUserName()); 
+         }
+		model.addAttribute("uList",uList );
+/		List<EmployeeVO> empList=employeeManager.getAllEmployees();
+F
+<table border="1">
+		<tr>
+			<th>  Id</th>
+			<th>Name</th>
+			<th>EmailId</th>
+		</tr>
+		<c:forEach items="${uList}" var="user">
+			<tr>
+				<td>${user.id}</td>
+				<td>${user.userName}</td>
+				<td>${user.userEmail}</td>
+				<td><a href="/spring_mvc_hibernate/update/"${user.id} >Update</a></td>
+				<td><a href="/spring_mvc_hibernate/delete/"${user.id} >Delete</a></td>
+			</tr>
+		</c:forEach>
+	</table>

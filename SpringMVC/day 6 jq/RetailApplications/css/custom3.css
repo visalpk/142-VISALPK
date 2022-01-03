@@ -1,0 +1,16 @@
+/*
+  @Project : Revamp Axis - Login Page
+  @Dev : Ajay Yadav
+  @Date : 31 Jan 2018;
+*/
+
+
+/*-------------- start base style ----------*/
+
+.login-cont-sec{
+    display: none;
+}
+
+.login-cont-sec.active{
+    display: block !important;
+}

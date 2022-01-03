@@ -1,0 +1,75 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<title>This is bootstrap template</title>
+<meta name="viewport" 
+content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">  
+  <h1> Bootstrap Images</h1>  
+  <p>Bootstrap supports for images. There are three classes in Bootstrap that can be used to apply 
+  <br/>some simple style to the images.</p>   
+</div>
+<center>
+<table border=1>
+<tr>
+<td><strong>Classes</strong></td>
+<td><strong>Uses</strong></td>
+</tr>
+<tr>
+<td style="padding:5px">.img-rounded</td>
+<td style="padding:5px">It adds border-radius:6px to give the image rounded corners.</td>
+</tr>
+<tr>
+<td style="padding:5px">.img-circle</td>
+<td style="padding:5px">It makes the entire image round by adding border-radius:500px.</td>
+</tr>
+<tr>
+<td style="padding:5px">.img-thumbnail</td>
+<td style="padding:5px">It adds a bit of padding and a gray border.</td>
+</tr>
+</table>
+</center>
+<hr style="border-color:red"/>
+<div class="container">  
+  <h2>Rounded Corners</h2>   
+<p>The class .img-rounded is used to add rounded corners to an image ( IE8 does not support rounded corners).</p>  
+  <img src="penguins.jpg" class="img-rounded" alt="abc" width="300" height="250">   
+</div> 
+<hr style="border-color:red"/>
+<div class="container">  
+  <h2>Circle</h2>        
+  <img src="penguins.jpg" class="img-circle" alt="abc"  width="300" height="250">   
+</div>
+<hr style="border-color:red"/>
+<div class="container">  
+  <h2>Thumbnail</h2>            
+  <img src="penguins.jpg" class="img-thumbnail" alt="abc" width="300" height="250">   
+</div> 
+<hr style="border-color:red"/>
+<div class="container">  
+  <h2>Responsive Image</h2>  
+  <p>The responsive images can adjust themselves automatically to fit the size of screen.<br/> 
+  You can create responsive images by adding an .img-responsive class to the &lt;img&gt; tag. 
+  <br/>The image will then scale nicely to the parent element.
+<br/>The .img-responsive class applies display: block; and max-width: 100%; and height: auto; to the image.</p>
+  <img class="img-responsive" src="penguins.jpg" alt="abc" width="460" height="345">   
+</div>   
+<hr style="border-color:red"/>
+<div class="container">  
+  <h2>Responsive Embed</h2> 
+<p>In Bootstrap, you can also add videos and scale them properly on any devices. <br/>The class .embed-responsive-item is used to create a responsive video. Class can be applied directly to
+ &lt;iframe&gt;, &lt;embed&gt;, &lt;video&gt;, and &lt;object&gt; elements.  
+  <div class="embed-responsive embed-responsive-16by9">  
+    <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/XGSy3_Czz8k"></iframe>  
+  </div>  
+</div>  
+<script src="bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/js/jquery-3.1.1.min.js"></script>
+<script src="bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</body>
+
+
+</html>
+

@@ -1,0 +1,58 @@
+﻿9-11:------------------------------------------------------------------------------------------------------------------
+DEBUG
+
+11-12:-----------------------------------------------------------------------------------------------------------------
+MICRO SERVICES
+
+what:
+
+A microservice architecture – a variant of the service-oriented architecture structural style – arranges an application as a collection of loosely-coupled services. In a microservices architecture, services are fine-grained and the protocols are lightweight.
+
+why:
+The main idea behind a microservice architecture is that applications are simpler to build and maintain when broken down into smaller pieces that work seamlessly together. ... These modules communicate with each other through simple, universally accessible application programming interfaces (APIs).
+1.Increased resilience
+2.Improved scalability
+3.The ability to use the right tool for the right task
+4.Faster time to market
+5.Easier debugging and maintenance
+6.Improved ROI with reduced TCO
+7.Continuous delivery
+
+drawback:
+1.Robust monitoring is a must
+2.You must embrace devops culture
+3.Testing can be complex
+4.You need to design with failure in mind
+
+When to Use:
+
+As a good starting point, these would be some of the ideal situations you can prefer microservices over their monolithic counterparts.
+
+1.When you want your monolithic application to accommodate scalability, agility, manageability
+      and delivery speed
+2.When you have to rewrite legacy applications in today’s programming languages or tech 
+      stacks to keep up with modern-day business requirements and solutions
+3.When you have standalone business applications or modules that have to be reused across 
+      diverse channels—some good examples would be login services, search options, authentication
+      facilities and more
+4.If you’re building a highly agile application (product or service) that demands swift speed 
+      of delivery, innovation and more
+
+When Not to Use :
+
+The co-founder and CTO of Contino, Benjamin Wootton, says that microservices are not a free lunch. This signifies the fact that they’re not for everybody. Ever since its inception and the fact that Netflix sort of romanticized microservices by claiming there are over 700 microservices running for the platform, companies got all excited to implement them in their businesses.
+
+But what most failed to notice is that the success stories stemmed mostly from product-based companies, which have gone through tons of iterations and models before they had a market-ready product. This architecture became appropriate to them after they realized the problem they tried to solve and became successful at it. That’s why it’s essential to understand in-depth if you need microservices for your business.
+
+As a starting point, here are some factors.
+
+1.Microservices are solutions to complex concerns and if your business doesn’t have complex issues, understand that you don’t have a system in place to handle the complexities of microservices.
+2.Using microservices can prove to offer contrary consequences if you don’t have a team size that cannot handle the tasks involved. This will only result in the delay of delivery.
+3.Implementing microservices for the sake of it can be hampering as well. If your application does not require to be broken down into microservices, you don’t need this. There is no absolute necessity that all applications should be broken down to microservices. There are those that are simple by their nature and functionality.
+
+Have a thorough understanding of the challenges involved apart from the benefits because they contain more insights on whether you should go about implementing this architecture. If you manage to see the right value for your product with microservices, go for it.
+======================================================================================
+
+
+
+

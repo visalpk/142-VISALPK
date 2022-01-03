@@ -1,0 +1,122 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<title>BootStrap Pagination</title>
+<meta name="viewport" 
+content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">  
+  <h1>Bootstrap Pagination</h1>  
+  <p>Pagination is used to sort the web pages of your website in an organized manner. It becomes very necessary if your website has a lot of web pages.
+Following is a list of classes that Bootstrap provides to handle pagination.</p>
+<table border="1">
+<tr>
+<th>Class</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>.pagination</td>
+<td style="padding-left:5px">Add this class to get the pagination on your page.</td>
+</tr>
+<tr>
+<td>.active,<br/>.disable</td>
+<td style="padding-left:5px">you can customize links by using .disabled for unclickable links and .active to indicate the current page.</td>
+</tr>
+<tr>
+<td>.pagination-lg,<br/>
+.pagination-sm</td>
+<td style="padding-left:5px">use these classes to get different size items.</td>
+</tr>
+</table>
+</div>  
+
+<div class="container">  
+  <h2>A basic pagination example:</h2>  
+  <p>Add the .pagination class to an &lt;ul&gt; element to create a basic pagination.
+  <br/>The .pagination class provides pagination links:</p>                    
+  <ul class="pagination">  
+    <li><a href="#">1</a></li>  
+    <li><a href="#">2</a></li>  
+    <li><a href="#">3</a></li>  
+    <li><a href="#">4</a></li>  
+    <li><a href="#">5</a></li>  
+  </ul>  
+</div>  
+
+
+<div class="container">  
+  <h2>Active State Pagination: Example</h2>  
+<p>Specify the current active state of the user.<br/>
+The active state specifies the current page on which user is active.
+<br/>The class .active is used to specify active state.
+</p>  
+  <ul class="pagination">  
+    <li><a href="#">1</a></li>  
+    <li class="active"><a href="#">2</a></li>  
+    <li><a href="#">3</a></li>  
+    <li><a href="#">4</a></li>  
+    <li><a href="#">5</a></li>  
+  </ul>  
+</div>   
+
+
+<div class="container">  
+  <h2>Disabled State Pagination Example:</h2>  
+  <p>
+  The disabled state specifies that you cannot click on the link.
+<br/>Add class .disabled to disable the links you don't need more.
+  <br/>Here, 4 and 5 links are disabled.</p>  
+  <ul class="pagination">  
+    <li><a href="#">1</a></li>  
+    <li><a href="#">2</a></li>  
+    <li><a href="#">3</a></li>  
+    <li class="disabled"><a href="#">4</a></li>  
+    <li><a href="#">5</a></li>  
+  </ul>  
+</div>
+
+<div class="container">  
+  <h2>Pagination - Sizing</h2>  
+  <p>You can also size pagination blocks larger or smaller accordingly.
+<br/>Add class .pagination-lg for larger blocks or .pagination-sm for smaller blocks.
+
+  <ul class="pagination pagination-lg">  
+    <li><a href="#">1</a></li>  
+    <li><a href="#">2</a></li>  
+    <li><a href="#">3</a></li>  
+    <li><a href="#">4</a></li>  
+    <li><a href="#">5</a></li>  
+  </ul>  
+  
+  <ul class="pagination pagination-sm">  
+    <li><a href="#">1</a></li>  
+    <li><a href="#">2</a></li>  
+    <li><a href="#">3</a></li>  
+    <li><a href="#">4</a></li>  
+    <li><a href="#">5</a></li>  
+  </ul>  
+</div>  
+
+
+<div class="container">  
+  <h2>Breadcrumbs Example:</h2>  
+  <p>It is another form of pagination. It indicates the current page's location within a navigational hierarchy.
+<br/>
+The .breadcrumb class is used to create breadcrumbs.
+<br/>The .breadcrumb class indicates the current page's location within a navigational hierarchy:</p>                    
+  <ul class="breadcrumb">  
+    <li><a href="#">Java</a></li>  
+    <li><a href="#">SQL</a></li>  
+    <li><a href="#">Php</a></li>  
+    <li class="active">.Net</li>          
+  </ul>  
+</div>  
+<script src="bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/js/jquery-3.1.1.min.js"></script>
+<script src="bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</body>
+
+
+</html>
+

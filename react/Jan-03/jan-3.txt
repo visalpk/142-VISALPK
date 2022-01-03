@@ -1,0 +1,21 @@
+Create a react component which is performing addition, take values as props.
+====================================
+function Addition(props){
+  let result = props.a + props.b;
+  return <h1>Addition of {props.a} and {props.b} is {result}</h1>
+}
+
+ReactDOM.render(  
+    <Addition a="10" b="20"/> ,
+  document.getElementById('root')
+);
+=====================================
+Create a Calculator component which will perform addition,sub,multi,div.
+accept values and operator as props, based on operatoe show only the desired result
+10,20,*
+=======================================
+Create a Calculator component which will perform addition,sub,multi,div.
+accept values and operator as props, based on operatoe show only the desired result
+same programs using class based components and state
+=======================================
+handler

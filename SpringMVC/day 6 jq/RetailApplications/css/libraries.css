@@ -1,0 +1,18 @@
+/*reset*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,a{margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+body{background:#ffffff;font-family:Arial,sans-serif;font-size:12px;margin:0 auto;color:#444444;overflow-x:hidden;}
+:focus{outline:0;}
+ul{list-style:none;margin:0;padding:0;}
+a{color:#8b8b8b;text-decoration:none;}
+a:hover{color:#6a6a6a;text-decoration:none;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;}
+.hidden{display:none;}
+

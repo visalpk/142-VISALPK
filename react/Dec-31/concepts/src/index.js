@@ -11,34 +11,37 @@ class Toggle extends React.Component{
     this.a=true;  
     this.myHandler = this.myHandler.bind(this);
   }
-
+ Myimg1() {
+  document.getElementById("image").innerHTML="<img src='/8.jpg'></img>"
+ }
+ Myimg2(){
+  document.getElementById("image").innerHTML="<img src='/7.jpg'></img>"
+      
+ }
   myHandler(){
     this.a=!this.a;
-    console.log(this.a)
     if(this.a)
     {
-      document.getElementById("image").innerHTML="<img src='/8.jpg'></img>"
+     {this.Myimg1}
     
     }else{
-      document.getElementById("image").innerHTML="<img src='/7.jpg'></img>"
-      
+      {this.Myimg2}
     }
     
   }
 
   render(){
-    return (<>
-          <div>  
+    return (
+      <>
+      <div>  
       <button onClick={this.myHandler}>click</button>
       </div>
-       <div id="image"></div>
-      
+      <div id="image"></div>
       </>
     );
   }
 }
 
 ReactDOM.render(
-  <Toggle />,
-  document.getElementById("root")
+  <Toggle />,document.getElementById("root")
 );

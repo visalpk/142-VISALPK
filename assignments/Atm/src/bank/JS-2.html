@@ -1,0 +1,77 @@
+<html>
+
+<head>
+    <title>Character & Word Counter in JavaScript</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .wrapper {
+            height: 300px;
+            width: 500px;
+            background: rgb(17, 0, 17);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        textarea {
+            height: 200px;
+            width: 100%;
+            font-size: 18px;
+            resize: none;
+            font-family: sans-serif;
+        }
+        
+        button {
+            margin: 5px;
+            height: 40px;
+            width: 200px;
+            margin-top: 25px;
+            margin-left: 150px;
+            cursor: pointer;
+            background: rgb(255, 255, 255);
+            border: none;
+            border-radius: 25px;
+            font-size: 22px;
+            color: rgb(0, 0, 0);
+            align-content: center;
+        }
+        
+        p { margin-top: 35px;
+            font-size: 22px;
+            font-weight: bold;
+            text-align: center;
+           
+        }
+    </style>
+    <script>
+        const calculate = () => {
+            let input = document.getElementById('input').value;
+            let noc = input.length;
+            let output1 = document.getElementById('output1').innerHTML = "Total Characters=" + noc;
+            let count = input.match(/\w+/g);
+            res = count.length;
+            let output2 = document.getElementById('output2').innerHTML = "Total words=" + res;
+        }
+    </script>
+</head>
+
+<body>
+    
+   
+    <div class="wrapper"><textarea id="input"></textarea>
+        <button onclick="calculate()">Calculate</button>
+        <p id="output1"></p>
+        <p id="output2"></p>
+
+
+    </div>
+      
+   
+</body>
+
+</html>

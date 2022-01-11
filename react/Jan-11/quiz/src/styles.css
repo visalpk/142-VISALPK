@@ -1,0 +1,67 @@
+.App{
+    text-align: center;
+    font-family: Arial;
+}
+
+.selected {
+    background: rgb(185, 185, 185) !important;
+}
+
+.options {
+    flex-flow: row wrap;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 90%;
+    height: relative;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    border-radius: 0.2rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin: 1px;
+}
+h2, span{
+    color: rgb(0, 0, 0);
+}
+body{
+    display: flex;
+    justify-content: center;    
+    color:white;
+    font-family: 'Segoe UI',;
+    font-size: 17px;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(0, 153, 255));
+   
+ }
+
+ .container{
+   
+    flex-flow: row wrap;
+    margin: 50px;
+    padding: 10px 10px 10px 10px;
+    height: relative;
+    width: relative;
+    border-radius: 0.6rem;
+    background-color: #f477ff;
+    box-shadow: 10px 10px #ffffff;
+    border-style: solid;
+    border-color: black;
+ }
+
+ 
+ .container2{
+   
+    flex-flow: row wrap;
+    margin: 20px;
+    padding: 10px 10px 10px 50px;
+    height: relative;
+    width: 500px;
+    background-color: #ffffff;
+    
+ }

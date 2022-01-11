@@ -26,4 +26,3 @@ avaliable or not in package.json.
 If not available then add it manually via
 '''
 npm install react-scripts --save
-'''
